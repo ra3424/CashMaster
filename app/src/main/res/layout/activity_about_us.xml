@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/background"
+
+    tools:context="com.rahul.indrakant.cashmaster.AboutUs">
+
+    <TextView
+        android:textColor="#5b0070"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Dev Team"
+        android:id="@+id/textView3"
+        android:textSize="35dp"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:textColor="#007e6d"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="For any query ,Please Contact our team we will try our best to sort out your query."
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp" />
+
+    <TextView
+        android:layout_marginTop="@dimen/button_font"
+        android:layout_below="@id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="#890007"
+        android:textSize="25sp"
+        android:text="@string/dev_team"
+        android:id="@+id/abt_us"
+        />
+    <TextView
+        android:layout_marginTop="@dimen/button_font"
+        android:textAlignment="center"
+        android:layout_below="@id/abt_us"
+        android:textColor="#890007"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thank You!"
+        />
+
+</RelativeLayout>

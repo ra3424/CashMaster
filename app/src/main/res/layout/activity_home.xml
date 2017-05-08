@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.rahul.indrakant.cashmaster.HomeActivity"
+    android:background="@color/background"
+
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/dislpay_username"
+        android:textAlignment="center"
+        android:textColor="@color/red"
+        android:textSize="25sp"
+        android:text="Hello"/>
+
+    <ScrollView
+        android:id="@+id/form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dislpay_username">
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            >
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        android:id="@+id/grid"
+        android:layout_centerHorizontal="true"
+
+        >
+
+
+        <Button
+
+            android:layout_marginStart="20dp"
+            android:background="@drawable/roundbutton1"
+            android:textColor="@color/white"
+            android:layout_height="@dimen/button_h"
+            android:layout_width="@dimen/button_w"
+            android:textSize="18sp"
+            android:id="@+id/button1"
+            android:text="New\nEntry"
+            />
+        <Button
+            android:background="@drawable/roundbutton1"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_height="@dimen/button_h"
+            android:layout_width="@dimen/button_w"
+            android:text="View\nEntry"
+            android:id="@+id/button2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+        />
+
+        <Button
+            android:layout_marginStart="20dp"
+            android:layout_height="@dimen/button_h"
+            android:layout_width="@dimen/button_w"
+            android:background="@drawable/roundbutton1"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="150dp"
+            android:id="@+id/button3"
+            android:text="Expenses"
+            />
+
+        <Button
+            android:layout_height="@dimen/button_h"
+            android:layout_width="@dimen/button_w"
+            android:background="@drawable/roundbutton1"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="150dp"
+            android:id="@+id/button4"
+            android:text="Report"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+           />
+
+</RelativeLayout>
+
+    <Button
+        android:layout_height="@dimen/button_h"
+        android:layout_width="@dimen/button_w"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/roundbutton1"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:id="@+id/button5"
+        android:text="Group"
+        android:layout_below="@+id/grid"
+        android:layout_centerHorizontal="true"
+        android:onClick="group"/>
+    </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>
